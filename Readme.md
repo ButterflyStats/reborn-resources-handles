@@ -3,6 +3,9 @@ Dota 2 Resource Lookup
 
 This repository contains an auto-generated `resources.json` lookup table for all VMLD and VPCF files used in Dota 2.
 
+The lookup table allows you to properly identify which particles and models are loaded. The resource hash in the json is equivalent
+to the ID found in all the `IResourceHandle<>` attributes (e.g. m_nModelIndex) as well as the index for all `PARTICLE_CREATE` packets.
+
 Format
 ------
 
@@ -19,7 +22,7 @@ The file is layed out like this:
 Usage
 -----
 
-Import `resources.json` into your program. That's it
+Import `resources.json` into your program. That's it.
 
 Generating
 ----------
